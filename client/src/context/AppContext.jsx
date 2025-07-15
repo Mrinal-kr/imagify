@@ -28,6 +28,8 @@ const AppContextProvider=(props)=>{
                 headers: { 'Authorization': `Bearer ${token}` }
             });
 
+            
+
             if(data.success){
                 // setCredit(Number(data.credits))
                 setCredit(Number(data.credit || data.credits || 0));
